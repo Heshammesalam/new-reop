@@ -1,0 +1,629 @@
+$maincolor:#1abc9c;
+$mainFontSize:16px;
+@import "hesham";
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    perspective: 600px;
+}
+
+
+/* start fram work */
+
+.container {
+    width: 1200px;
+    margin: auto;
+}
+
+.table {
+    height: 100%;
+    display: table;
+}
+
+.table-row {
+    display: table-row;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.main-color {
+    color: $maincolor;
+}
+
+.main-background {
+    background-color: $maincolor;
+}
+
+.overlay {
+    background: rgba(49, 55, 61, 0.9);
+    width: 100%;
+    height: 100%;
+}
+
+.hidden1 {
+    display: none;
+}
+
+
+/* end fram work */
+
+
+/* start header */
+
+::-webkit-scrollbar-thumb {
+    color: $maincolor;
+}
+
+::-webkit-scrollbar-track {
+    color: #3b5998;
+}
+
+.header {
+    @extend %cover;
+    background: url("background1.jpg");
+    color: #fff;
+    overflow: hidden;
+    .navbar {
+        overflow: hidden;
+        padding: 20px 0;
+        width: 100%;
+    }
+    .navbar {
+        .logo {
+            font-size: 25px;
+        }
+        .links {
+            float: right;
+            i {
+                margin-left: 5px;
+            }
+        }
+    }
+}
+
+.header .intro h1 {
+    margin: 0;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.header .intro p {
+    margin: 5px 0 40px;
+    line-height: 1.9;
+    font-size: 20px;
+    color: #e2e2e2;
+}
+
+.header .buttons {
+    overflow: hidden;
+}
+
+.header .buttons button {
+    background: transparent;
+    padding: 10px 0;
+    width: 180px;
+    font-size: 14px;
+    border: 1px solid #909090;
+    margin: 0 8px;
+    border-radius: 10px;
+    outline: none;
+    color: #fff;
+}
+
+.header .buttons button:hover {
+    @extend %transition;
+    background-color: $maincolor;
+    border: 1px solid $maincolor;
+    color: #fff;
+}
+
+.header .chevron {
+    position: absolute;
+    top: 540px;
+    width: 100%;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.header .chevron i {
+    border: 2px solid #dfd7d7;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+/* end header */
+
+
+/*  start features */
+
+.features {
+    padding: 80px 0;
+    overflow: hidden;
+}
+
+.features .box {
+    float: left;
+    width: 25%;
+}
+
+.features .box i {
+    color: $maincolor;
+    border: 1px solid #d6d2d2;
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    border-radius: 50%;
+    transition: all 0.8s ease-in-out;
+}
+
+.features .box i:hover {
+    background-color: $maincolor;
+    color: #fff;
+    transform: scale(1.13);
+    border: 1px solid $maincolor;
+}
+
+.features .box h3 {
+    font-weight: normal;
+    color: #333;
+}
+
+.features .box p {
+    color: rgb(121, 121, 121);
+}
+
+
+/*  end features */
+
+
+/* start subscribe */
+
+.subscribe {
+    @extend %cover;
+    background: url("tanatos7.jpg");
+    color: #fff;
+}
+
+.subscribe form {
+    padding: 100px 0;
+    width: 700px;
+    margin: auto;
+    text-align: center;
+}
+
+.subscribe form input[type="email"] {
+    padding: 7px;
+    width: 280px;
+    font-size: 20px;
+    border-radius: 10px;
+    position: relative;
+    top: 2px;
+    border: none;
+    outline: none;
+}
+
+.subscribe form ::-webkit-input-placeholder {
+    font-size: $mainFontSize - 2;
+    color: #909090;
+    margin-left: 20px;
+}
+
+.subscribe form button {
+    padding: 10px;
+    width: 220px;
+    border: none;
+    background-color: $maincolor;
+    color: #fff;
+    border-radius: 10px;
+    margin-left: 20px;
+    font-size: 14px;
+    outline: none;
+}
+
+.our-work {
+    padding: 50px 0;
+    overflow: hidden;
+}
+
+.our-work h2 {
+    font-weight: 500;
+    font-size: 35px;
+    margin-bottom: 0;
+}
+
+.our-work p {
+    line-height: 2;
+    margin: 10px 0 40px;
+    color: #504e4e;
+}
+
+.show-more {
+    @extend %transition;
+    background: transparent;
+    border: 1px solid #ccc;
+    width: 180px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 30px;
+    color: #555;
+    outline: none;
+}
+
+.show-more:hover {
+    background-color: $maincolor;
+    border: 1px solid $maincolor;
+}
+
+.hidden {
+    display: none;
+}
+
+.our-work .items-box {
+    overflow: hidden;
+}
+
+.our-work .items-box .items {
+    float: left;
+    width: 30%;
+    margin-left: 1.33333%;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    height: 350px;
+}
+
+.our-work .items-box .items:hover .over {
+    @extend %transition;
+    display: block;
+}
+
+.our-work .items-box .items .over {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $maincolor;
+    display: none;
+}
+
+.our-work .items-box .items .over h4 {
+    font-size: 24px;
+    margin-top: 70px;
+    margin-bottom: 0;
+    color: #fff;
+}
+
+.our-work .items-box .items .over p {
+    margin-top: 20px;
+    margin-bottom: 60px;
+    line-height: 1.8;
+    color: rgb(247, 238, 238);
+}
+
+.our-work .items-box .items .over button {
+    @extend %transition;
+    background-color: transparent;
+    width: 180px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.our-work .items-box .items .over button:hover {
+    background-color: #fff;
+    border: 1px solid #fff;
+    color: $maincolor;
+}
+
+
+/* end subscribe */
+
+
+/* start testimonials    */
+
+.testimonials {
+    @extend %cover;
+    background-image: url("background.jpg");
+    overflow: hidden;
+}
+
+.testimonials .client {
+    padding: 50px 0;
+    color: #fff;
+    font-size: 20px;
+    overflow: hidden;
+}
+
+.testimonials .client p {
+    line-height: 2;
+    font-style: italic;
+}
+
+.testimonials .client img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.testimonials .fa-chevron-right {
+    margin-top: 200px;
+    float: right;
+    color: #909090;
+    cursor: pointer;
+}
+
+.testimonials .fa-chevron-left {
+    margin-top: 200px;
+    color: #909090;
+    float: left;
+    cursor: pointer;
+}
+
+.testimonials .fa-chevron-right:hover,
+.testimonials .fa-chevron-left:hover {
+    color: $maincolor;
+    transform: scale(1.2);
+}
+
+
+/* end testimonials    */
+
+
+/* start our team    */
+
+.our-team {
+    padding: 50px 0;
+}
+
+.our-team h2 {
+    font-size: 35px;
+    margin-bottom: 0;
+}
+
+.our-team .main {
+    padding: 10px 0 40px;
+    line-height: 2;
+    color: #646161;
+    font-size: 20px;
+}
+
+.our-team .teampic {
+    overflow: hidden;
+}
+
+.our-team .teampic .personpic {
+    float: left;
+    width: 24%;
+    margin-left: 1%;
+    overflow: hidden;
+    color: #909090;
+}
+
+.our-team .teampic .personpic img {
+    width: 250px;
+    height: 250px;
+    filter: grey;
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+}
+
+.our-team .teampic .personpic:hover img {
+    filter: none;
+    -webkit-filter: grayscale(0);
+}
+
+.our-team .teampic .personpic:hover .fa-facebook {
+    background-color: #3b5998;
+    color: #fff;
+}
+
+.our-team .teampic .personpic:hover .fa-twitter {
+    background-color: #55acee;
+    color: #fff;
+}
+
+.our-team .teampic .personpic:hover .fa-google-plus {
+    background-color: $maincolor;
+    color: #fff;
+}
+
+.our-team .teampic .personpic:hover {
+    color: #555;
+}
+
+.our-team .teampic .personpic .social-icons i {
+    background-color: #b6b4b4;
+    color: #e2e2e2;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+}
+
+
+/* end our team    */
+
+
+/*   start contact  */
+
+.contact {
+    @extend %cover;
+    background-image: url("tanatos6.jpg");
+}
+
+.contact .overlay {
+    padding: 50px 0;
+    color: #fff;
+    line-height: 2;
+}
+
+.contact h2 {
+    font-size: 35px;
+}
+
+.contact .main {
+    margin-bottom: 100px;
+}
+
+.contact form {
+    width: 700px;
+    text-align: center;
+    margin: auto;
+}
+
+.contact form input[type="email"],
+.contact form input[type="text"] {
+    width: 48%;
+    padding: 0 10px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+.contact form input[type="email"] {
+    float: right;
+}
+
+.contact form input[type="text"] {
+    float: left;
+}
+
+.contact form textarea {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    height: 140px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+.contact form .info {
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.contact form .info button {
+    float: left;
+    background-color: $maincolor;
+    color: #fff;
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.contact form .info .form-icons i {
+    float: right;
+    margin-left: 10px;
+    color: #e2e2e2;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+}
+
+.contact form .info .form-icons .fa-facebook {
+    background-color: #3b5998;
+    color: #fff;
+}
+
+.contact form .info .form-icons .fa-twitter {
+    background-color: #55acee;
+    color: #fff;
+}
+
+.contact form .info .form-icons .fa-google-plus {
+    background-color: $maincolor;
+    color: #fff;
+}
+
+
+/* end  contact   */
+
+
+/* start footer   */
+
+.footer {
+    width: 100%;
+    height: 100px;
+    background: #3b434c;
+    color: #fff;
+    padding: 30px 0;
+}
+
+.footer .copyright {
+    float: left;
+}
+
+.footer .design {
+    float: right;
+}
+
+
+/* end footer  */
+
+
+/* mediaquery */
+
+@media (max-width: 767px) {
+    .container {
+        width: 600px;
+        margin: auto;
+    }
+    .subscribe form button {
+        margin-right: 70px;
+    }
+    .our-work .items-box .items {
+        float: left;
+        width: 45%;
+        margin-left: 2.5%;
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+        height: 350px;
+    }
+    .show-more {
+        display: none;
+    }
+    .our-team .teampic .personpic {
+        float: left;
+        width: 45%;
+        margin-left: 2.5%;
+        overflow: hidden;
+        color: #909090;
+    }
+}
+
+//*extend//////
+%cover {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+%transition {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
